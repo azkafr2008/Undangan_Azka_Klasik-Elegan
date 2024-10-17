@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Digital</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Cover -->
+    <section class="cover" id="coverSection"> 
+        <div class="textc">
+            <p>The Wedding Of</p>
+            <h2>Fulan & Fulana</h2>
+            <p>21 November 2021</p>
+        </div>
+        <button class="button" id="scrollToContent" onclick="putarMusik()">
+            <i class="bi bi-envelope-paper-heart-fill"></i> Buka Undangan
+        </button>        
+        <img class="img-l-top" src="assets/img/clasic.png" alt="">
+        <img class="img-l-bottom" src="assets/img/clasic.png" alt="">
+        <img class="img-r-top" src="assets/img/clasic.png" alt="">
+        <img class="img-r-bottom" src="assets/img/clasic.png" alt="">
+    </section>
+
+    <!-- Isi Undangan -->
+    <section class="main-content" id="mainContentSection">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+              <li>
+                <a href="#quotesSection"><i class="bi bi-quote"></i></a>
+              </li>
+              <li>
+                <a href="#profile"><i class="bi bi-people"></i></a>
+              </li>
+              <li>
+                <a href="#lokasi"><i class="bi bi-compass"></i></a>
+              </li>
+              <li>
+                <a href="#galeri"><i class="bi bi-images"></i></a>
+              </li>
+              <li>
+                <a href="#tamu"><i class="bi bi-person-raised-hand"></i></a>
+              </li>
+              <li>
+                <a href="#daftar"><i class="bi bi-book"></i></a>
+              </li>
+              <li>
+                <a href="#cerita"><i class="bi bi-clock-history"></i></a>
+              </li>
+              <li>
+                <a href="#hadiah"><i class="bi bi-gift"></i></a>
+              </li>
+              <li>
+                <a href="#pesan"><i class="bi bi-chat-dots"></i></a>
+              </li>
+
+            </ul>
+          </nav>
+
+        <!-- Musik -->
+        <div id="kotakmusik">
+            <audio id="musik" loop autoplay>
+                <source src="/assets/audio/janji suci.mp3">
+                Musik tidak dapat diputar
+            </audio>
+
+            <div id="ctrlmusik" onclick="putarMusik()">
+                <img id="imgmusik" src="/assets/img/on.svg" alt="">
+            </div>
+        </div>
+        <!-- Quote -->
+        <div id="quotesSection" class="background quote">
+            <div class="text">
+=               <p>Surat Ar Rum ayat 21</p>
+                <p>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ</p>
+                <p>"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."</p>
+                <audio controls>
+                    <source src="assets/audio/arrum21.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Profil Pengantin -->
+        <div id="profile" class="profil">
+            <!-- <img class="benteng" src="/assets/img/motif5.png" alt=""> -->
+            <div class="profile-item">
+                <img src="assets/img/wedding.jpg" alt="">
+                <h3>Fulan Bin Fulan</h3>
+                <p>Putra dari Bapak Fulan & Ibu Fulana</p>
+                <a href="https://instagram.com/fulan"><i class="bi bi-instagram"></i> @fulan</a>
+            </div>
+            <div class="profile-item">
+                <img src="assets/img/wedding.jpg" alt="">
+                <h3>Fulana Binti Fulan</h3>
+                <p>Putri dari Bapak Fulan & Ibu Fulana</p><a href="https://instagram.com/fulana"><i class="bi bi-instagram"></i> @fulana</a>
+            </div>
+        </div>
+
+        <!-- Lokasi Acara -->
+        <div id="lokasi" class="lokasi background">
+            <h3>Detail Acara</h3>
+            <div class="lokasi-item">
+                <h4>Akad Nikah dan Resepsi</h4>
+                <p>Tanggal: 99 September 2024</p>
+                <p>Waktu: 09.00 WIB</p>
+                <p>Lokasi: Gedung Sate</p>
+                <a href="#"><i class="bi bi-geo-alt-fill"></i> Lihat Lokasi di Google Maps</a>
+            </div>
+            <div class="lokasi-item gmaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.333093307952!2d106.95128872810724!3d-6.219732600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c8420b9c711%3A0x64dd94ba587f673f!2sJl.%20I%20Gusti%20Ngurah%20Rai%20No.77%206%2C%20RT.006%2FRW.006%2C%20Bintara%2C%20Kec.%20Bekasi%20Bar.%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017134!5e0!3m2!1sid!2sid!4v1726107958388!5m2!1sid!2sid" width="300px" height="150px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+        <!-- Galleri -->
+        <div id="galeriCountainer">
+            <div id="galeri" class="gallery">
+                <h3>Galeri Momen Berharga</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="assets/img/cover.png" alt="">
+                        </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/cover.png" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/img/cover.png" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="assets/video/alam.mp4" type="video/mp4">                            Video tidak didukung oleh browser Anda.
+                        </video>
+                    </div>
+                    <div class="gallery-item">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZllBkqAUy7g?si=jouUfFHp_wJuxFbJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tamu Khusus -->
+        <div id="tamu" class="tamu">
+            <!-- <img class="motif2" src="/assets/img/motif4.png" alt=""> -->
+            <h3>Tamu Khusus</h3>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th rowspan="2">Nama</th>
+                        <th colspan="2">Hubungan</th>
+                    </tr>
+                    <tr>
+                        <th>Keluarga</th>
+                        <th>Non Keluarga</th>
+                    </tr>
+                    <tr>
+                        <td>Fulan</td>
+                        <td>Ayah</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fulin</td>
+                        <td>Ibu</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Fulan</td>
+                        <td></td>
+                        <td>Pak RT</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- RSVP -->
+        <div id="daftar" class="background">
+            <div class="rsvp">
+                <img class="motif1" src="/assets/img/motif3.png" alt="">
+                <h3>Konfirmasi Kehadiran (RSVP)</h3>
+                <form id="rsvpForm">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Nomor:</label>
+                    <input type="nomor" id="nomor">
+
+                    <h3>Kehadiran:</h3>
+                    <input type="radio" id="hadir" name="attendance" value="Hadir"> 
+                    <label for="hadir">Hadir</label>
+                    <input type="radio" id="tidakHadir" name="attendance" value="Tidak Hadir">
+                    <label for="tidakHadir">Tidak Hadir</label>
+
+                    <label for="guests">Jumlah Tamu:</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <label for="comments">Pesan/Komentar:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+
+                    <input type="checkbox" name="vege" id="vege"><label for="vege">Saya Vegetarian</label>
+
+                    <input type="submit" value="Kirim">
+                </form>
+            </div>
+        </div>
+
+        <!-- Story -->
+        <div id="cerita" class="background">
+            <div class="story">
+                <img src="assets/img/wedding.jpg" alt=""><br><b>
+                    <div class="storyt">
+                        <h3>Cerita Kami</h3>
+                        <p>Cerita ini dimulai ketika si Fulan bermain bersama kawannya yang bernama Azka, kemudian perpapasannya lah si Fulan dan si Fulin saat dialan.</p>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Hadiah -->
+        <div id="hadiah">
+            <div class="gifts">
+                <h3>Kirim Hadiah</h3>
+                <p>Jika Anda ingin memberikan hadiah, anda bisa mentransfernya melalui rekening berikut atau mengirimkan kado ke alamat di bawah ini:</p>
+                    <p>Rekening Bank:
+                        <div id="teks" onclick="salinTeks()">112-344-242</div>
+                    </p>
+                    <p style="font-size: 10px;">(Klik nomor untuk menyalin)</p>
+                    <p>Alamat Kado: Jakasampurna, Bekasi Barat, Bekasi</p>
+                <img src="assets/img/qr.png" alt="">
+            </div>
+        </div>
+
+        <!-- Pesan -->
+        <div id="pesan" class="background">
+            <div class="messages">
+                <h3><i class="bi bi-pencil-fill"></i> Pesan untuk Pengantin</h3>
+                <form id="messagesForm">
+                    <label for="message"><i class="bi bi-chat-dots"></i> Pesan/Komentar:</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tulis pesan atau doa Anda di sini"></textarea>
+                    <input type="submit" value="Kirim Pesan">
+                </form>
+            </div>
+        </div>
+        <!-- Ucapan Terimakasih -->
+        <div id="ucapan">
+            <div class="terimakasih">
+                <h3>Ucapan Terima Kasih</h3>
+                <p>Terimakasih sudah membaca undangan ini. Kami mengharapkan kehadiran anda dalam acara in.</p>
+            </div>
+        </div>   
+        
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

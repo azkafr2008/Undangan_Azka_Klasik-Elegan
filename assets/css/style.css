@@ -1,0 +1,658 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow: hidden;
+    transition: overflow 1s ease;
+}
+
+section{
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+#coverSection img{
+    height: 50vh;
+}
+.img-l-top{
+    position: absolute;
+    left: -60px;
+    top: -60px;
+}
+.img-r-top{
+    position: absolute;
+    right: -60px;
+    top: -60px;
+    transform: scaleX(-1);
+}
+.img-l-bottom{
+    position: absolute;
+    left: -60px;
+    bottom: -60px;
+    transform: scaley(-1);
+}
+.img-r-bottom{
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    transform: scale(-1, -1);
+}
+
+.cover{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("/assets/img/cover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.cover .textc {
+    background-color: rgba(241, 195, 195, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.cover .textc p {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.cover .textc h2 {
+    font-size: 7vw;
+    margin: 10px 0;
+}
+
+.button {
+    padding: 15px 32px;
+    border: none;
+    background-color: #343d34;
+    color: white;
+    font-size: 24px;
+    border-radius: 12px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.button:hover {
+    background-color: brown;
+}
+
+.main-content {
+    text-align: center;
+    background-color: white;
+}
+
+#quotesSection {
+    background-image: url('/assets/img/wedding.jpg');
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    z-index: 2;
+    width: 90vw;
+    margin-left: 5%;
+    border-radius: 35px;
+}
+  
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+  
+.navbar a:hover {
+    background-color: rgb(255, 255, 253);
+    color: #000000;
+    border-radius: 35px;
+}
+
+#ctrlmusik{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 1vh;
+    right: 1vh;
+    z-index: 999;
+}
+
+#imgmusik{
+    height: 10vh;
+}
+.background {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.text{
+    margin-top: 40px;
+    padding: 5px;
+    background-color: rgba(248, 245, 229, 0.507);
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote p{
+    font-size: 28px;
+    margin: 5px;
+    border-radius: 12px;
+
+}
+
+.quote audio {
+    display: block;
+    margin: 20px auto;
+}
+
+#profile{
+    margin-top: 0;
+    text-align: center;
+    background-image: url("/assets/img/motif2.png ");
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.profil {
+    padding: 20px;
+    background-color: cadetblue;
+    color: wheat;
+}
+
+.profil .profile-item {
+    margin-bottom: 40px;
+}
+
+.profil img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.profil h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.profil p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.profil a {
+    color: wheat;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.profil a:hover {
+    color: brown;
+}
+
+.lokasi {
+    background-image: url("/assets/img/bg1.png");
+    height: 100vh;
+}
+
+.lokasi h3 {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lokasi-item {
+    margin-top: 40px;
+    padding: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    background-image: url("/assets/img/bag.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.lokasi-item h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.lokasi-item p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.lokasi-item a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #343d34;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.lokasi-item a:hover {
+    color: brown;
+}
+
+.lokasi-item a i {
+    margin-right: 5px;
+}
+
+#galeriCountainer{
+    background-image: url("/assets/img/bg2.png");
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+
+
+}
+
+.gallery {
+    padding: 30px;
+    background-color: #f1f1f100;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item img:hover, .gallery-item video:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+
+.gallery-item::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+}
+
+.gallery-item img, .gallery-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#daftar{
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/bg9.png");
+}
+
+.rsvp {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rsvp h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.motif1{
+    position: absolute;
+    width: 10vw;
+    right: 10px;
+}
+
+#tamu{
+    background-image: url("/assets/img/bg3.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    
+}
+
+.table{
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+table {
+    width: 80vw;
+    margin-top: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin-left: auto;
+    background-image: url("/assets/img/motif.png");
+    background-position: center;
+    background-size: cover;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.rsvp label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.rsvp input, .rsvp select, .rsvp textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.rsvp input[type="submit"] {
+    width: auto;
+    background-color: #343d34;
+    color: white;
+    padding: 10px 20px;
+}
+
+.rsvp input[type="submit"]:hover {
+    background-color: brown;
+}
+
+#cerita{
+    background-image: url("/assets/img/bg4.png");
+    background-color: rgba(212, 170, 77, 0.836);
+}
+
+.messages {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story h3, .gifts h3, .messages h3, .terimakasih h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.story{
+    margin-top: 40px;
+    padding: 30px;
+    background-color: cadetblue;
+    background-image: url("/assets/img/bg6.png");
+    background-size: cover;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    height: 80vh;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.story p {
+    color: black;
+}
+
+.story img {
+    width: 30vw;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+#hadiah{
+    background-image: url("/assets/img/bg5.png");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.gifts{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: rgba(218, 148, 148, 0.473);
+    border-radius: 100px;
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.gifts img{
+    width: 20vw;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+.gifts .copy-text {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#pesan{
+    background-image: url("/assets/img/bg7.png");
+}
+
+.messages {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #eb9898d2;
+    border-radius: 12px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messages h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #d9534f; 
+}
+
+.messages label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.messages textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.messages textarea:focus {
+    border-color: #d9534f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(217, 83, 79, 0.5);
+}
+
+.messages input[type="submit"] {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.messages input[type="submit"]:hover {
+    background-color: #c9302c;
+}
+
+.messages input[type="submit"]:active {
+    background-color: #ac2925;
+}
+
+#ucapan{
+    background-image: url("/assets/img/bg8.png");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.terimakasih {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #f1f1f1b4;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
