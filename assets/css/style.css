@@ -82,23 +82,41 @@ section{
 
 .button {
     padding: 15px 32px;
-    border: none;
-    background-color: #343d34;
     color: white;
     font-size: 24px;
     border-radius: 12px;
     margin-top: 20px;
-    transition: background-color 0.3s ease;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     z-index: 99;
+    background-color: #f9fafb;
+    border: 2px solid #111827;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
 }
 
-.button:hover {
-    background-color: brown;
+.button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #111827;
+    border-radius: inherit;
+    translate: 6px 6px;
+    transition: 0.25s;
+    z-index: -1;
+}
+
+.button:hover::after {
+    translate: 0;
+}
+
+.button:hover{
+    background-color: #111827;
+    color: #f9fafb;
 }
 
 .main-content {
@@ -107,7 +125,7 @@ section{
 }
 
 #quotesSection {
-    background-image: url('/assets/img/wedding.jpg');
+    background-image: url('../img/wedding.jpg');
     margin: 0;
     padding: 0;
 }
@@ -197,7 +215,7 @@ section{
 #profile{
     margin-top: 0;
     text-align: center;
-    background-image: url("/assets/img/motif2.png ");
+    background-image: url("../img/motif2.png ");
     padding: 20px;
     background-position: center;
     background-size: cover;
@@ -244,7 +262,7 @@ section{
 }
 
 .lokasi {
-    background-image: url("/assets/img/bg1.png");
+    background-image: url("../img/bg1.png");
     height: 100vh;
 }
 
@@ -265,7 +283,7 @@ section{
     padding: 30px;
     max-width: 800px;
     margin-left: auto;
-    background-image: url("/assets/img/bag.png");
+    background-image: url("../img/bag.png");
     background-position: center;
     background-size: cover;
     margin-right: auto;
@@ -301,7 +319,7 @@ section{
 }
 
 #galeriCountainer{
-    background-image: url("/assets/img/bg2.png");
+    background-image: url("../img/bg2.png");
     background-size: cover;
     flex-direction: column;
     align-items: center;
@@ -373,7 +391,7 @@ section{
 #daftar{
     width: 100%;
     height: 100%;
-    background-image: url("/assets/img/bg9.png");
+    background-image: url("../img/bg9.png");
 }
 
 .rsvp {
@@ -399,7 +417,7 @@ section{
 }
 
 #tamu{
-    background-image: url("/assets/img/bg3.png");
+    background-image: url("../img/bg3.png");
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -435,7 +453,7 @@ table {
     border-radius: 12px;
     max-width: 800px;
     margin-left: auto;
-    background-image: url("/assets/img/motif.png");
+    background-image: url("../img/motif.png");
     background-position: center;
     background-size: cover;
     margin-right: auto;
@@ -479,7 +497,7 @@ th, td {
 }
 
 #cerita{
-    background-image: url("/assets/img/bg4.png");
+    background-image: url("../img/bg4.png");
     background-color: rgba(212, 170, 77, 0.836);
 }
 
@@ -503,7 +521,7 @@ th, td {
     margin-top: 40px;
     padding: 30px;
     background-color: cadetblue;
-    background-image: url("/assets/img/bg6.png");
+    background-image: url("../img/bg6.png");
     background-size: cover;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -526,7 +544,7 @@ th, td {
 }
 
 #hadiah{
-    background-image: url("/assets/img/bg5.png");
+    background-image: url("../img/bg5.png");
     height: 100vh;
     width: 100%;
     display: flex;
@@ -567,7 +585,7 @@ th, td {
 }
 
 #pesan{
-    background-image: url("/assets/img/bg7.png");
+    background-image: url("../img/bg7.png");
 }
 
 .messages {
@@ -629,7 +647,7 @@ th, td {
 }
 
 #ucapan{
-    background-image: url("/assets/img/bg8.png");
+    background-image: url("../img/bg8.png");
     height: 100vh;
     width: 100%;
     display: flex;
