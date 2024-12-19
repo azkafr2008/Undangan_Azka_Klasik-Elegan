@@ -2,7 +2,6 @@ const musik = document.querySelector('#musik');
 const imgmusik = document.querySelector('#imgmusik');
 
 
-
 function showCoverSection() {
     document.getElementById('coverSection').style.display = 'flex';
     document.getElementById('mainContentSection').style.display = 'none';
@@ -33,10 +32,10 @@ window.addEventListener('load', function() {
 function putarMusik(){
     if(musik.paused){
         musik.play();
-        imgmusik.src = "/assets/img/on.svg";
+        imgmusik.src = "assets/img/on.svg";
     }else{
         musik.pause();
-        imgmusik.src = "/assets/img/off.svg";
+        imgmusik.src = "assets/img/off.svg";
     }
 }
 
